@@ -4,4 +4,7 @@ Atividade proposta pela professor [Kelly Joany](https://www.github.com/kellyjoan
 
 MAIS INFORMAÇÕES EM BREVE 
 
-<iframe src="https://giphy.com/embed/xThtamfCMIS2Z4B4wU" width="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/true-and-the-rainbow-kingdom-funny-xThtamfCMIS2Z4B4wU">via GIPHY</a></p>
+<p align="center">
+  <img src="https://media0.giphy.com/media/l3nSIMrTlKxFL9UGI/source.gif" width="400" title="True" alt="Main Character of the True and the Rainbow Kingdom animation series">
+</p>
+
