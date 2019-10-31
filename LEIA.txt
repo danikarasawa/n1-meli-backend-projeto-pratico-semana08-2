@@ -1,0 +1,14 @@
+Exercícios de fixação
+Orientadora: Kelly Joany de Oliveira Santos
+Reprograma: Turma Backend - Mercado Livre
+
+1 - Crie uma API que utilize o servidor express e exponha a porta 3000.
+2 - Crie uma rota GET que retorne uma lista de filmes ao acessar a rota '/filmes
+3 - Crie uma rota GET que retorne uma lista de filmes de um diretor específico
+4 - Crie uma rota GET que retorne uma lista de filmes de um gênero específico 
+
+
+
+
+!! 5 - Crie uma rota Post que crie um novo filme e salve o resultado no arquivo json.
+!! 6 - Crie uma rota Post que adicione um novo gênero a um filme já existente e salve no arquivo json.
