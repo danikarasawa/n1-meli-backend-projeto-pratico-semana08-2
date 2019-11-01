@@ -5,6 +5,6 @@ Atividade proposta pela professor [Kelly Joany](https://www.github.com/kellyjoan
 MAIS INFORMAÇÕES EM BREVE 
 
 <p align="center">
-  <img src="https://media0.giphy.com/media/l3nSIMrTlKxFL9UGI/source.gif" width="400" title="True" alt="Main Character of the True and the Rainbow Kingdom animation series">
+  <img src="https://media0.giphy.com/media/l3nSIMrTlKxFL9UGI/source.gif" width="400" title="Griselda" alt="Character of the True and the Rainbow Kingdom animation series">
 </p>
 
