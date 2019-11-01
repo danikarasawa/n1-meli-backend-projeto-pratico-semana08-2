@@ -4,7 +4,6 @@ const fs = require('fs');
 // GET
 
 exports.get = (req, res) => {
-    console.log(req.url)
     res.status(200).send(movies)
 }
 
@@ -48,7 +47,6 @@ res.status(200).send(movies.filter(item => item.genre == genre))
 
 // POST 
 
-//TEM QUE RESOLVER ISSO 
 exports.postMovies = (req, res) => {
     const { title, year, director, duration, genre, rate } = req.body;
     movies.push({ title, year, director, duration, genre, rate });
@@ -64,21 +62,20 @@ exports.postMovies = (req, res) => {
 
 };
 
-//TEM QUE RESOLVER ISSO
-// exports.postGenre = (req, res) => {
-//     const title = req.params.title
-//     const titulo = movies.find(item => item.title == title)
-//     if (!titulo) {
-//         res.send("Não tem esse filme aqui, não")
-//     }
-//     const { genre } = req.body;
-//     movies[titulo].genre.push({ genre });
+exports.postGenre = (req, res) => {
+    const title = req.params.title
+    const titleCondition = movies.find(item => item.title == title)
+    if (!titleCondition) {
+        res.send("Não tem esse filme aqui, não")
+    }
+    const { genre } = req.body;
+    movies.genre.push( genre );
 
-//     fs.writeFile("./src/model/filmes.json", JSON.stringify(movies), 'utf8', function (err) {
-//         if (err) {
-//             return res.status(500).send({ message: err });
-//         }
-//         console.log("The file was saved!")
-//     });
-//     return res.status(201).send(movies.titulo);
-// }
+    fs.writeFile("./src/model/filmes.json", JSON.stringify(movies), 'utf8', function (err) {
+        if (err) {
+            return res.status(500).send({ message: err });
+        }
+        console.log("The file was saved!")
+    })
+    return res.status(201).send(movies);
+};

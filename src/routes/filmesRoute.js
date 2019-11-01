@@ -8,6 +8,6 @@ router.get('/diretor/:director', filmesController.getDirector)
 router.get('/genero/:genre', filmesController.getGenre)
 
 router.post('/', filmesController.postMovies)
-// router.post('/:title', filmesController.postGenre)
+router.post('/:title', filmesController.postGenre)
 
 module.exports = router
