@@ -17,14 +17,34 @@ exports.getDirector = (req, res) => {
     res.status(200).send(movies.filter(item => item.director == director))
 }
 
+//REFINAR ESTE CÓDIGO PARA PEGAR QUALQUER UM 
 exports.getGenre = (req, res) => {
     const genre = req.params.genre
 
     if (!genre) {
         res.send("Volte uma casa!")
     }
-    res.status(200).send(movies.filter(item => item.genre == genre))
-} //REFINAR ESTE CÓDIGO PARA PEGAR QUALQUER UM 
+
+res.status(200).send(movies.filter(item => item.genre == genre))
+}
+
+// CÓDIGO DA KELLY JOANY + INTERESSANTE COM FOR + LENGTH
+//     const choosenGenre = req.params.genre
+//     let listFilms = []
+//     for (let i = 0; i < movies.lenght; i++) {
+//         for (let j = 0; j < movies[i].genre.lenght; j++) {
+//             if (movies[i].genre[j] === choosenGenre) {
+//                 listFilms.push(movies[i]);
+//             }
+//         }
+//     }
+//     if (listFilms.lenght === 0) 
+//     return res.status(500).json({ message: "The genre doesn't exist" });
+// }
+// res.status(200).send(listFilms);
+// }
+
+
 
 // POST 
 
@@ -45,20 +65,20 @@ exports.postMovies = (req, res) => {
 };
 
 //TEM QUE RESOLVER ISSO
-exports.postGenre = (req, res) => {
-    const title = req.params.title
-    const titulo = movies.find(item => item.title == title)
-    if (!titulo) {
-        res.send("Não tem esse filme aqui, não")
-    }
-    const { genre } = req.body;
-    movies[titulo].genre.push({ genre });
+// exports.postGenre = (req, res) => {
+//     const title = req.params.title
+//     const titulo = movies.find(item => item.title == title)
+//     if (!titulo) {
+//         res.send("Não tem esse filme aqui, não")
+//     }
+//     const { genre } = req.body;
+//     movies[titulo].genre.push({ genre });
 
-    fs.writeFile("./src/model/filmes.json", JSON.stringify(movies), 'utf8', function (err) {
-        if (err) {
-            return res.status(500).send({ message: err });
-        }
-        console.log("The file was saved!")
-    });
-    return res.status(201).send(movies.titulo);
-}
+//     fs.writeFile("./src/model/filmes.json", JSON.stringify(movies), 'utf8', function (err) {
+//         if (err) {
+//             return res.status(500).send({ message: err });
+//         }
+//         console.log("The file was saved!")
+//     });
+//     return res.status(201).send(movies.titulo);
+// }
