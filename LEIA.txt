@@ -2,13 +2,20 @@ Exercícios de fixação
 Orientadora: Kelly Joany de Oliveira Santos
 Reprograma: Turma Backend - Mercado Livre
 
-1 - Crie uma API que utilize o servidor express e exponha a porta 3000.
-2 - Crie uma rota GET que retorne uma lista de filmes ao acessar a rota '/filmes
-3 - Crie uma rota GET que retorne uma lista de filmes de um diretor específico
-4 - Crie uma rota GET que retorne uma lista de filmes de um gênero específico 
+FEITO 1 - Crie uma API que utilize o servidor express e exponha a porta 3000.
+FEITO 2 - Crie uma rota GET que retorne uma lista de filmes ao acessar a rota '/filmes
+FEITO 3 - Crie uma rota GET que retorne uma lista de filmes de um diretor específico
+FEITO 4 - Crie uma rota GET que retorne uma lista de filmes de um gênero específico 
+FEITO 5 - Crie uma rota Post que crie um novo filme e salve o resultado no arquivo json.
+FEITO 6 - Crie uma rota Post que adicione um novo gênero a um filme já existente e salve no arquivo json.
+FEITO 7 - Crie uma rota Post que adicione uma propriedade chamada "image" em um filme já existente e que a URL da mesma seja salva no arquivo json
 
 
 
 
-!! 5 - Crie uma rota Post que crie um novo filme e salve o resultado no arquivo json.
-!! 6 - Crie uma rota Post que adicione um novo gênero a um filme já existente e salve no arquivo json.
+** 8 - Crie uma rota Post que adicione uma propriedade chamada "showTime" e que receba um array de horários das sessões. E que logo após seja possível salvar esta informação no arquivo json
+
+FEITO 9 - Crie uma rota GET que retorne uma lista de todos os filmes de um diretor específico e que contenha um gênero específico.
+
+10 - Crie uma rota GET que retorne uma lista de filmes que possua uma duração maior que a passada pela rota. 
+
